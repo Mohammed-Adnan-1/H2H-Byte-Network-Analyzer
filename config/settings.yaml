@@ -1,0 +1,7 @@
+app:
+  name: AURA-X WiFi Analyzer
+
+thresholds:
+  latency: 100
+  packet_loss: 2
+  signal_dbm: -70

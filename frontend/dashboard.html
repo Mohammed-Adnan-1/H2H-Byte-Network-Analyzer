@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AURA-X WiFi Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🚀 AURA-X WiFi Intelligence</h1>
+    <p class="subtitle">AI-powered WiFi Experience Analyzer</p>
+
+    <button id="analyzeBtn" type="button">Analyze Network</button>
+
+    <p id="loading" class="loading">Analyzing network...</p>
+
+    <div class="grid">
+
+        <div class="card glow">
+            <h3>QoE</h3>
+            <p id="qoe">--</p>
+        </div>
+
+        <div class="card glow">
+            <h3>Root Cause</h3>
+            <p id="cause">--</p>
+        </div>
+
+        <div class="card glow">
+            <h3>Recommendation</h3>
+            <p id="fix">--</p>
+        </div>
+
+    </div>
+
+    <div class="card big glow">
+        <h3>Explanation</h3>
+        <p id="explanation">--</p>
+    </div>
+
+    <div class="chart-card glow">
+        <h3>📊 Network Metrics</h3>
+        <canvas id="chart"></canvas>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
