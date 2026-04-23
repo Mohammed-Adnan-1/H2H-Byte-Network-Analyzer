@@ -5,6 +5,10 @@ from backend.routes import register_routes
 #  First create app
 app = Flask(__name__)
 
+@app.route("/")
+def home():
+    return "AURA-X Backend is Running Successfully 🚀"
+
 #  Then apply CORS
 CORS(app)
 
